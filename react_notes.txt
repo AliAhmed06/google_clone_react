@@ -1,0 +1,41 @@
+-> material ui package 
+    for icons and styling
+
+-> react router package 
+    for links for different pages
+
+    import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+    function App() {
+        return (
+            <div className="app">
+            <Router>
+                <Routes>          
+                
+                <Route path="/" element={<Home />} />
+                <Route path="/search" element={<SearchPage />} />
+
+                </Routes>
+            </Router>
+            </div>
+        );
+    }
+
+    -> for creating anchor links
+        import { Link } from 'react-router-dom';
+
+        <Link to='/home'>home</Link>
+
+***************************************** Firebase CLI *********************************************
+npm install -g firebase-tools
+firebase login
+firebase init
+
+hosting
+current project
+
+public => build
+y
+n
+npm run build
+firebase deploy
